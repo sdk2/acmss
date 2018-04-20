@@ -1,0 +1,42 @@
+var defaultface='default';
+var fc_shownum='12';
+
+var facedb={};
+facedb['default'] = 'Ä¬ÈÏ±íÇé';
+
+var face=new Array();
+face[256]=['default/28.GIF',''];
+face[239]=['default/55.gif',''];
+face[238]=['default/1.gif',''];
+face[237]=['default/21.gif',''];
+face[236]=['default/3.gif',''];
+face[235]=['default/17.GIF',''];
+face[234]=['default/9.gif',''];
+face[233]=['default/7.gif',''];
+face[232]=['default/27.GIF',''];
+face[231]=['default/14.gif',''];
+face[230]=['default/6.gif',''];
+face[229]=['default/10.gif',''];
+face[228]=['default/15.gif',''];
+face[227]=['default/22.gif',''];
+face[226]=['default/8.gif',''];
+face[240]=['default/11.gif',''];
+face[241]=['default/16.GIF',''];
+face[255]=['default/23.gif',''];
+face[254]=['default/5.gif',''];
+face[253]=['default/20.GIF',''];
+face[252]=['default/25.gif',''];
+face[251]=['default/12.gif',''];
+face[250]=['default/44.gif',''];
+face[249]=['default/18.gif',''];
+face[248]=['default/4.gif',''];
+face[247]=['default/2.gif',''];
+face[246]=['default/24.GIF',''];
+face[245]=['default/13.gif',''];
+face[244]=['default/26.gif',''];
+face[243]=['default/54.gif',''];
+face[242]=['default/66.gif',''];
+face[225]=['default/19.gif',''];
+
+var faces=new Array();
+faces['default'] = [256,239,238,237,236,235,234,233,232,231,230,229,228,227,226,240,241,255,254,253,252,251,250,249,248,247,246,245,244,243,242,225,];

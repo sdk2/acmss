@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<link rel="stylesheet" href="/icpc2016/skin1.css" type="text/css" media="screen" id="skin" />
+<script language="javascript" type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.5.2/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="jquery.cookie.js"></script>
+
+<title>ACM ICPC 信息站</title></head>
+<body>﻿<script src="../boardcssjs/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="../boardcssjs/jquery.cookie.js"></script>
+<link rel="stylesheet" href="../boardcssjs/bootstrap.min.css" />
+<link rel="stylesheet" href="../boardcssjs/bootstrap-responsive.min.css" />
+<script src="../boardcssjs/bootstrap.min.js"></script>
+<style type="text/css">
+input {display:inline !important;}
+.png {vertical-align: top;}
+</style>
+
+
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+<div class="container" style="width:1100px; height:40px;">
+      <!-- Be sure to leave the brand out there if you want it shown -->
+      <a class="brand" href="#"></a>
+
+<ul class="nav">
+
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">2008-2010赛事<b class="caret"></b></a><ul class="dropdown-menu" style="z-index:9999;"><li><a href="/icpc2008/ustc_online.php" target="_blank">（2008）合肥赛区网络赛</a></li><li><a href="/icpc2008/bjtu_online.php" target="_blank">（2008）北京赛区网络赛</a></li><li><a href="/icpc2008/hrbeu_online.php" target="_blank">（2008）哈尔滨赛区网络赛</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2008）成都赛区网络赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2008）杭州赛区网络赛（缺失）</a></li><li><a href="/icpc2008/hrbeu_onsite.php" target="_blank">（2008）哈尔滨赛区现场赛</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2008）合肥赛区现场赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2008）北京赛区现场赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2008）成都赛区现场赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2008）杭州赛区现场赛（缺失）</a></li><li><a href="/icpc2009/hit_online.php" target="_blank">（2009）哈尔滨赛区网络赛</a></li><li><a href="/icpc2009/dhu_online.php" target="_blank">（2009）上海赛区网络赛</a></li><li><a href="/icpc2009/nit_online.php" target="_blank">（2009）宁波赛区网络赛</a></li><li><a href="/icpc2009/ustc_online.php" target="_blank">（2009）合肥赛区网络赛</a></li><li><a href="/icpc2009/whu_online.php" target="_blank">（2009）武汉赛区网络赛</a></li><li><a href="/icpc2009/whu_onsite.php" target="_blank">（2009）武汉赛区现场赛</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2009）哈尔滨赛区现场赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2009）上海赛区现场赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2009）宁波赛区现场赛（缺失）</a></li><li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">（2009）合肥赛区现场赛（缺失）</a></li><li><a href="/icpc2010/index.php" target="_blank">2010中国区五个赛区信息汇总</a></li><li><a href="/icpc2010/hrbeu_online.php" target="_blank">（2010）哈尔滨赛区网络赛(2010.09.11)</a></li><li><a href="/icpc2010/tju_online.php" target="_blank">（2010）天津赛区网络赛(2010.09.12)</a></li><li><a href="/icpc2010/zstu_online.php" target="_blank">（2010）杭州赛区网络赛(2010.09.19)</a></li><li><a href="/icpc2010/scu_online.php" target="_blank">（2010）成都赛区网络赛(2010.09.18)</a></li><li><a href="/icpc2010/fzu_online.php" target="_blank">（2010）福州赛区网络赛(2010.10.10)</a></li><li><a href="/icpc2010/hrbeu_onsite.php" target="_blank">（2010）哈尔滨赛区现场赛(2010.09.26)</a></li><li><a href="/icpc2010/tju_onsite.php" target="_blank">（2010）天津赛区现场赛(2010.10.17)</a></li><li><a href="/icpc2010/zstu_onsite.php" target="_blank">（2010）杭州赛区现场赛(2010.10.24)</a></li><li><a href="/icpc2010/scu_onsite.php" target="_blank">（2010）成都赛区现场赛(2010.11.07)</a></li><li><a href="/icpc2010/fzu_onsite.php" target="_blank">（2010）福州赛区现场赛(2010.11.21)</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">2011-2012赛事<b class="caret"></b></a><ul class="dropdown-menu" style="z-index:9999;"><li><a href="http://acmicpc.info/archives/128" target="_blank">2011中国区五个赛区信息汇总</a></li><li><a href="/icpc2011/board.php" target="_blank">世界总决赛(2011.05.20)</a></li><li><a href="/icpc2011/dlut_online.php" target="_blank">大连赛区网络赛(2011.09.03)</a></li><li><a href="/icpc2011/fdu_online.php" target="_blank">上海赛区网络赛(2011.09.10)</a></li><li><a href="/icpc2011/bupt_online.php" target="_blank">北京赛区网络赛(2011.09.18)</a></li><li><a href="/icpc2011/ccniit_online.php" target="_blank">成都赛区网络赛(2011.09.11)</a></li><li><a href="/icpc2011/fjnu_online.php" target="_blank">福州赛区网络赛(2011.10.07)</a></li><li><a href="/icpc2011/dlut_onsite.php" target="_blank">大连赛区现场赛(2011.09.25)</a></li><li><a href="/icpc2011/fdu_onsite.php" target="_blank">上海赛区现场赛(2011.10.16)</a></li><li><a href="/icpc2011/bupt_onsite.php" target="_blank">北京赛区现场赛(2011.10.23)</a></li><li><a href="/icpc2011/ccniit_onsite.php" target="_blank">成都赛区现场赛(2011.11.06)</a></li><li><a href="/icpc2011/fjnu_onsite.php" target="_blank">福州赛区现场赛(2011.11.20)</a></li><li><a href="http://acmicpc.info/archives/755" target="_blank">2012中国区五个赛区信息汇总</a></li><li><a href="/icpc2012/nenu_invite.php" target="_blank">长春赛区邀请赛(2012.04.22)</a></li><li><a href="/icpc2012/zjnu_invite.php" target="_blank">金华赛区邀请赛(2012.05.06)</a></li><li><a href="/icpc2012/board.php" target="_blank">世界总决赛(2012.05.17)</a></li><li><a href="/icpc2012/nenu_online.php" target="_blank">长春赛区网络赛(2012.09.08)</a></li><li><a href="/icpc2012/tjut_online.php" target="_blank">天津赛区网络赛(2012.09.09)</a></li><li><a href="/icpc2012/nsu_online.php" target="_blank">成都赛区网络赛(2012.09.16)</a></li><li><a href="/icpc2012/zjnu_online.php" target="_blank">金华赛区网络赛(2012.09.22)</a></li><li><a href="/icpc2012/zstu_online.php" target="_blank">杭州赛区网络赛(2012.09.23)</a></li><li><a href="/icpc2012/nenu_onsite.php" target="_blank">长春赛区现场赛(2012.10.14)</a></li><li><a href="/icpc2012/tjut_onsite.php" target="_blank">天津赛区现场赛(2012.10.21)</a></li><li><a href="/icpc2012/zjnu_onsite.php" target="_blank">金华赛区现场赛(2012.10.28)</a></li><li><a href="/icpc2012/zstu_onsite.php" target="_blank">杭州赛区现场赛(2012.11.04)</a></li><li><a href="/icpc2012/nsu_onsite.php" target="_blank">成都赛区现场赛(2012.11.11)</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">2013-2014赛事<b class="caret"></b></a><ul class="dropdown-menu" style="z-index:9999;"><li><a href="http://acmicpc.info/archives/1369" target="_blank">2013中国区五个赛区信息汇总</a></li><li><a href="/icpc2013/njust_invite.php" target="_blank">南京赛区邀请赛(2013.05.12)</a></li><li><a href="/icpc2013/thnu_invite.php" target="_blank">通化邀请赛(2013.05.26)</a></li><li><a href="/icpc2013/hnu_invite.php" target="_blank">长沙赛区邀请赛(2013.05.26)</a></li><li><a href="/icpc2013/zjut_invite.php" target="_blank">杭州赛区邀请赛(2013.06.02)</a></li><li><a href="/icpc2013/uestc_invite.php" target="_blank">成都赛区邀请赛(2013.06.02)</a></li><li><a href="/icpc2013/board.php" target="_blank">世界总决赛(2013.07.03)</a></li><li><a href="/icpc2013/uestc_online.php" target="_blank">成都赛区网络赛(2013.09.14)</a></li><li><a href="/icpc2013/zjut_online.php" target="_blank">杭州赛区网络赛(2013.09.15)</a></li><li><a href="/icpc2013/njust_online.php" target="_blank">南京赛区网络赛(2013.09.21)</a></li><li><a href="/icpc2013/hnu_online.php" target="_blank">长沙赛区网络赛(2013.09.22)</a></li><li><a href="/icpc2013/jlu_online.php" target="_blank">长春赛区网络赛(2013.09.28)</a></li><li><a href="/icpc2013/uestc_onsite.php" target="_blank">成都赛区现场赛(2013.10.20)</a></li><li><a href="/icpc2013/zjut_onsite.php" target="_blank">杭州赛区现场赛(2013.10.27)</a></li><li><a href="/icpc2013/njust_onsite.php" target="_blank">南京赛区现场赛(2013.11.02)</a></li><li><a href="/icpc2013/hnu_onsite.php" target="_blank">长沙赛区现场赛(2013.11.17)</a></li><li><a href="/icpc2013/jlu_onsite.php" target="_blank">长春赛区现场赛(2013.12.08)</a></li><li><a href="http://acmicpc.info/archives/1695" target="_blank">2014中国区六个赛区信息汇总</a></li><li><a href="/icpc2014/board.php" target="_blank">世界总决赛(2014.06.25)</a></li><li><a href="/icpc2014/mdjnu_online.php" target="_blank">牡丹江赛区网络赛(2014.09.07)</a></li><li><a href="/icpc2014/ustl_online.php" target="_blank">鞍山赛区网络赛(2014.09.13)</a></li><li><a href="/icpc2014/nwpu_online.php" target="_blank">西安赛区网络赛(2014.09.14)</a></li><li><a href="/icpc2014/scut_online.php" target="_blank">广州赛区网络赛(2014.09.20)</a></li><li><a href="/icpc2014/bnu_online.php" target="_blank">北京赛区网络赛(2014.09.21)</a></li><li><a href="/icpc2014/shu_online.php" target="_blank">上海赛区网络赛(2014.09.27)</a></li><li><a href="/icpc2014/mdjnu_onsite.php" target="_blank">牡丹江赛区现场赛(2014.10.12)</a></li><li><a href="/icpc2014/ustl_onsite.php" target="_blank">鞍山赛区现场赛(2014.10.19)</a></li><li><a href="/icpc2014/nwpu_onsite.php" target="_blank">西安赛区现场赛(2014.10.26)</a></li><li><a href="/icpc2014/bnu_onsite.php" target="_blank">北京赛区现场赛(2014.11.16)</a></li><li><a href="/icpc2014/scut_onsite.php" target="_blank">广州赛区现场赛(2014.11.23)</a></li><li><a href="/icpc2014/shu_onsite.php" target="_blank">上海赛区现场赛(2014.12.07)</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">2015赛事<b class="caret"></b></a><ul class="dropdown-menu" style="z-index:9999;"><li><a href="http://acmicpc.info/archives/1884" target="_blank">2015中国区5+1个赛区信息汇总</a></li><li><a href="/icpc2015/board.php" target="_blank">世界总决赛(2015.05.20)</a></li><li><a href="/icpc2015/nenu_online.php" target="_blank">长春赛区网络赛(2015.09.13)</a></li><li><a href="/icpc2015/neu_online.php" target="_blank">沈阳赛区网络赛(2015.09.19)</a></li><li><a href="/icpc2015/pku_online.php" target="_blank">北京赛区网络赛(2015.09.20)</a></li><li><a href="/icpc2015/ecust_online.php" target="_blank">上海赛区网络赛(2015.09.26)</a></li><li><a href="/icpc2015/ustc_online.php" target="_blank">合肥赛区网络赛(2015.09.27)</a></li><li><a href="/icpc2015/nyist_onsite.php" target="_blank">南阳CCPC (2015.10.18)</a></li><li><a href="/icpc2015/nenu_onsite.php" target="_blank">长春赛区现场赛(2015.10.18)</a></li><li><a href="/icpc2015/neu_onsite.php" target="_blank">沈阳赛区现场赛(2015.10.25)</a></li><li><a href="/icpc2015/ustc_onsite.php" target="_blank">合肥赛区现场赛(2015.11.08)</a></li><li><a href="/icpc2015/pku_onsite.php" target="_blank">北京赛区现场赛(2015.11.15)</a></li><li><a href="/icpc2015/ecust_onsite.php" target="_blank">上海赛区现场赛(2015.11.22)</a></li><li><a href="/icpc2015/shu_onsite.php" target="_blank">上海赛区现场赛(2015.12.13)</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">2016赛事<b class="caret"></b></a><ul class="dropdown-menu" style="z-index:9999;"><li><a href="/icpc2016/board.php" target="_blank">世界总决赛(2016.05.19)</a></li><li><a href="/icpc2016/dlmu_online.php" target="_blank">大连赛区网络赛(2016.09.10)</a></li><li><a href="/icpc2016/upc_online.php" target="_blank">青岛赛区网络赛(2016.09.17)</a></li><li><a href="/icpc2016/neu_online.php" target="_blank">沈阳赛区网络赛(2016.09.18)</a></li><li><a href="/icpc2016/dlmu_onsite.php" target="_blank">大连赛区现场赛(2016.10.16)</a></li><li><a href="/icpc2016/neu_onsite.php" target="_blank">沈阳赛区现场赛(2016.10.23)</a></li><li><a href="/icpc2016/cuhk_onsite.php" target="_blank">香港赛区现场赛(2016.11.6)</a></li><li><a href="/ccpc2016/jlu_onsite.php" target="_blank">CCPC长春赛区现场赛(2016.09.27)</a></li><li><a href="/ccpc2016/ahu_onsite.php" target="_blank">CCPC合肥赛区现场赛(2016.10.16)</a></li><li><a href="/ccpc2016/hdu_onsite.php" target="_blank">CCPC杭州赛区现场赛(2016.10.16)</a></li></ul></li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">相关网站<b class="caret"></b></a>
+    <ul class="dropdown-menu" style="z-index:9999;">
+<li><a href="http://acmicpc.info" target="_blank">ACM/ICPC信息站</a></li>
+<li><a href="http://weibo.com/acmicpc" target="_blank">acmicpc新浪微博</a></li>
+<li><a href="http://renren.com/acmicpc" target="_blank">ACMICPC人人公共主页</a></li>
+<li><a href="http://shaidaima.com" target="_blank">晒代码</a></li>
+<li><a href="http://blog.acmicpc.info/" target="_blank">ACMer博客瀑布流</a></li>
+<li><a href="http://w-ai.org" target="_blank">War of AI</a></li>
+</ul>
+  </li>
+
+<li><a href="#" onclick="$('#modal_contact').modal('show'); return false;">联系我们</a></li>
+<!--<li><a href="/live" target="_blank"><strong>南京赛区现场直播</strong></a></li>-->
+  </ul>
+
+<div id="ckepop" style="margin-top:7px;">
+<a href="http://www.jiathis.com/share?uid=1534030" class="jiathis jiathis_txt" target="_blank"><img src="http://v3.jiathis.com/code_mini/images/btn/v1/jiathis5.gif" border="0" /></a>
+<a class="jiathis_counter_style_margin:3px 0 0 2px"></a>
+</div>
+      <!-- Everything you want hidden at 940px or less, place within here -->
+      <div class="nav-collapse">
+        <!-- .nav, .navbar-search, .navbar-form, etc -->
+  </div>
+    </div>
+  </div>
+</div>
+<!-- JiaThis Button BEGIN -->
+ <script type="text/javascript">var jiathis_config = {data_track_clickback:true};</script>
+ <script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1534030" charset="utf-8"></script>
+ <!-- JiaThis Button END -->
+ 
+<div style="float:left; margin-top:50px;">
+    <a href="http://acmicpc.info"><img src="http://acmicpc.info/wp-content/uploads/2011/09/logo.jpg" border="0" class="png" alt="ACM/ICPC信息站"></a>
+    <script type="text/javascript"><!--
+    google_ad_client = "ca-pub-7588064591721788";
+    /* dorablog广告 */
+    google_ad_slot = "5339107167";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+<div style="clear:both;"></div>
+
+<div class="modal hide" id="modal_contact">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">×</button>
+		<h3>联系我们</h3> 
+	</div>
+	<div class="modal-body">如果能提供更全面的数据以及有任何意见或建议，欢迎您发送邮件到admin[at]acmicpc.info联系。谢谢您的关注。</div>
+	<div class="modal-footer">
+		<a href="#" class="btn btn-primary" data-dismiss="modal">关闭</a>
+	</div>
+
+</div>
+<br/>
+
+<!--<a href="/icpc-neu-problem.pdf">沈阳赛区题目下载</a>-->
+
+<div id="tableouter">
+<div style="clear:both;"></div>
+<div style="margin-left: auto;margin-right: auto;">
+	<h1>ACM/ICPC 2016</h1>
+	<table style="width:80%;">
+		<tbody>
+		<tr>
+			<td class="ac">大连赛区</td>
+			<td class="ac">大连海事大学</td>
+			<td class="ac">网络赛(2016.9.10) 
+				<a href="http://acm.hdu.edu.cn/search.php?field=problem&key=The+36th+ACM%2FICPC+Asia+Regional+Dalian+Site+%A1%AA%A1%AA+Online+Contest&source=1&searchmode=source">题目</a> 
+				<a href="/icpc2016/dlmu_online.php">排名</a> 
+				<!--<a href="#">-->题解<!--</a>-->
+			</td>
+			<td class="ac">现场赛(2016.10.16) <!--<a href="#">-->题目<!--</a>--> <a href="/icpc2016/dlmu_onsite.php">排名</a> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">沈阳赛区</td>
+			<td class="ac">东北大学</td>
+			<td class="ac">网络赛(2016.9.18)  
+				<a href="http://acm.hdu.edu.cn/search.php?field=problem&key=2016+ACM%2FICPC+Asia+Regional+Shenyang+Online&source=1&searchmode=source">题目</a> 
+				<a href="/icpc2016/neu_online.php">排名</a> 
+				<!--<a href="#">-->题解<!--</a>-->
+			</td>
+			<td class="ac">现场赛(2016.10.23)   <!--<a href="#">-->题目<!--</a>--> <a href="/icpc2016/neu_onsite.php">排名</a>  <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">香港赛区</td>
+			<td class="ac">香港中文大学</td>
+			<td class="ac">网络赛(2016.9.10)   <a href="https://asiahk16prel.kattis.com/problems">题目</a> <a href="/icpc2016/cuhk_online.php">排名</a> <!--<a href="#">-->题解<!--</a>--></td>
+			<td class="ac">现场赛(2016.11.6)   <a href="https://asiahk16.kattis.com/problems">题目</a> <a href="/icpc2016/cuhk_onsite.php">排名</a> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">青岛赛区</td>
+			<td class="ac">中国石油大学</td>
+			<td class="ac">网络赛(2016.9.17)   <a href="http://acm.hdu.edu.cn/search.php?field=problem&key=2016+ACM%2FICPC+Asia+Regional+Qingdao+Online&source=1&searchmode=source">题目</a> <a href="/icpc2016/upc_online.php">排名</a> <!--<a href="#">-->题解<!--</a>--> </td>
+			<td class="ac">现场赛(2016.11.13)   <!--<a href="#">-->题目<!--</a>--> <!--<a href="#">-->排名<!--</a>--> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">北京赛区</td>
+			<td class="ac">北京大学</td>
+			<td class="ac">网络赛(2016.9.24)   <a href="https://hihocoder.com/contest/acmicpc2016beijingonline/problems">题目</a> <!--<a href="#">-->排名<!--</a>--> <!--<a href="#">-->题解<!--</a>--></td>
+			<td class="ac">现场赛(2016.11.13)   <!--<a href="#">-->题目<!--</a>--> <!--<a href="#">-->排名<!--</a>--> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">总决赛</td>
+			<td class="ac">上海大学</td>
+			<td class="ac"></td>
+			<td class="ac">现场赛(2016.12.11)   <!--<a href="#">-->题目<!--</a>--> <!--<a href="#">-->排名<!--</a>--> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+
+<div style="margin-left: auto;margin-right: auto;">
+	<h1>CCPC 2016</h1>
+	<table style="width:80%;">
+		<tbody>
+		<tr>
+			<td class="ac">长春赛区</td>
+			<td class="ac">吉林大学</td>
+			<td class="ac">现场赛(2016.9.27) <a href="http://acm.hdu.edu.cn/search.php?field=problem&key=2016%D6%D0%B9%FA%B4%F3%D1%A7%C9%FA%B3%CC%D0%F2%C9%E8%BC%C6%BE%BA%C8%FC%A3%A8%B3%A4%B4%BA%A3%A9-%D6%D8%CF%D6%C8%FC&source=1&searchmode=source">题目</a> <a href="/ccpc2016/jlu_onsite.php">排名</a> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">合肥赛区</td>
+			<td class="ac">合肥大学</td>
+			<td class="ac">现场赛(2016.10.16)   <!--<a href="#">-->题目<!--</a>--> <a href="http://board.acmicpc.info/ccpc2016/ahu_onsite.php">排名</a> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">杭州赛区</td>
+			<td class="ac">杭州电子科技大学</td>
+			<td class="ac">现场赛(2016.10.19)   <a href="/ccpc-jlu-2016-problem.pdf">题目</a> <a href="http://board.acmicpc.info/ccpc2016/hdu_onsite.php">排名</a> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		<tr>
+			<td class="ac">总决赛</td>
+			<td class="ac">浙江大学宁波理工学院</td>
+			<td class="ac">现场赛(2016.11.27)   <!--<a href="#">-->题目<!--</a>--> <!--<a href="#">-->排名<!--</a>--> <!--<a href="#">-->题解<!--</a>--></td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+<div>
+	<script type="text/javascript">//<![CDATA[
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-25272107-1']);
+	_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]>
+	</script>
+
+</div>
+</div>
+
+
+  <script language="javascript" type="text/javascript">
+  	
+function changecss(str) {
+	var csshref=$("#skin").attr("href");
+	csshref=csshref.replace(/skin[0-9]/g,str);
+	csshref=$("#skin").attr("href",csshref);
+	$.cookie("css_skin",str);
+	if(str=='skin1'){
+		$("#linkskin1").html('<strong>普通</strong>');
+		$("#linkskin2").html('<a onclick="changecss(\'skin2\')" href="javascript:void(0);">夜晚</a>');
+	}else{
+		$("#linkskin1").html('<a onclick="changecss(\'skin1\')" href="javascript:void(0);">普通</a>');
+		$("#linkskin2").html('<strong>夜晚</strong>');
+	}
+	if ($.browser.msie&&($.browser.version == "6.0")){
+		window.location.reload();
+	}
+}
+
+  	
+$(function() {
+	if ($.browser.msie&&($.browser.version == "6.0")){
+		if($.cookie("ie6") != 'ie6'){
+			alert('您使用的是IE6浏览器，部分功能不能正常使用。\n建议升级浏览器版本或更换Firefox、Chrome等其它浏览器。\n期待一切顺利！');
+			$.cookie("ie6",'ie6');
+		}
+	}
+	
+    });
+    </script>
+</body>
+</html>

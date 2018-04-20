@@ -1,0 +1,49 @@
+
+/*.banner{*/
+    /*height:146px;*/
+    /*background-color:#CFF0FF;*/
+/*}*/
+
+.footer{
+    color:#555;
+    background-color:#D3D3D3;
+    height:100px;
+    padding-top:30px;
+}
+
+.search{
+    position:fixed;
+    right:50px;
+    bottom:150px;
+}
+.btn-custom {
+height:60px;
+width:60px;
+color: #FFFFFF;
+background-color: #7bae23;
+padding: 6px 10px;
+}
+
+.btn-custom:hover{
+background-color:#9AC94B;
+
+}
+
+.custom-glyph-color{
+    color:#fff;
+}
+
+.custom-glyph-color:hover{
+    color:#b1b1b1;
+}
+
+.text{
+    color:black;
+    font-family:华文细黑;
+    padding-left:60px;
+    font-size:20px;
+}
+.welcome{
+    background-color:#C1C1C1;
+   border-radius:10px 10px 10px 10px;
+}

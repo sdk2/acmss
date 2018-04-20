@@ -1,0 +1,42 @@
+/* 
+	WordPress Menubar Plugin
+	b-blue.css stylesheet for the Basic template
+*/
+
+.b-blue {
+	clear: both;
+	margin: 0px;
+	padding-top: 0px; 
+	padding-right: 0px; 
+	padding-bottom: 0px; 
+	padding-left: 30px;
+	line-height: 20px;
+	background: #4180B6;
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+.b-blue a, 
+.b-blue a:visited {
+	padding-top: 3px; 
+	padding-right: 10px; 
+	padding-bottom: 3px; 
+	padding-left: 10px; 
+	background: #69AEE7; color: white;
+	text-decoration: none;
+	}
+
+.b-blue a:hover {
+	background: white; color: #69AEE7;
+	text-decoration: none;
+	}
+
+.b-blue a.selected, 
+.b-blue a.selected:visited {
+	background: white; color: #4180B6;
+	}
+
+.b-blue a.selected:hover {
+	background: white; color: #69AEE7;
+	text-decoration: none;
+	}

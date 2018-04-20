@@ -1,0 +1,247 @@
+/* ----------- Problem Colors -----------  */
+
+.color-A {
+	/* violet 紫 */
+	background-color: #945a9e !important;
+}
+
+.color-B { /*  red 红 */
+	background-color: red !important;
+	color: #fff;
+}
+
+.color-C { /* yellow 黄 */
+	background-color: #dcdb3e !important;
+	color: #fff;
+}
+
+.color-D {
+	/* lightgreen 绿 */
+	background-color: lightgreen !important;
+}
+
+.color-E {
+	/* blue 蓝 */
+	background-color: blue !important;
+	color: #fff;
+	
+}
+
+.color-F {
+	/* magenta 粉 */
+	background-color: magenta !important;
+}
+
+.color-G {
+	/* yellow banana 黄香蕉 */
+	background-color: #F2F5A9 !important;
+}
+
+.color-H {
+	
+	/*  red 红 */
+	background-color: red !important;
+	color: #fff;
+	background: url("../img/heart.png") -1px -1px no-repeat;
+}
+
+.color-I {
+	/* violet 紫 */
+	background-color: #945a9e !important;
+	background: url("../img/heart.png") -1px -1px no-repeat;
+}
+
+.color-J {
+	/* lightblue 淡蓝 */
+	background-color: white !important;
+}
+
+.color-K {
+	/* lightpink 淡粉色*/
+	background-color: lightpink !important;
+	background: url("../img/heart.png") -1px -1px no-repeat;
+}
+
+.color-L { 
+	/* yellow banana 黄香蕉 */
+	background-color: #F2F5A9 !important;
+}
+
+
+/*
+red 红
+990819
+
+peach 桃
+cf3837
+
+dark pink 粉
+ad3b62
+
+pale pink 淡粉
+ea8a9f
+
+نارنجی orange 橙
+f07b0f
+
+green 绿
+52a961
+
+violet 紫
+945a9e
+
+white 白
+ffffff
+
+yellow 黄
+dcdb3e
+
+blue 蓝
+6dbab
+*/
+
+/* ----------- Rest of styles ----------- */
+body {
+	font-family: Arial;
+	font-size: 15px;
+	min-width: 900px;
+}
+
+#header {
+	height: 80px;
+}
+
+#header > .logo-right {
+	float: right;
+	padding: 0 30px 0 70px;
+	max-width: 100px;
+}
+
+#header > .logo-left {
+	float: left;
+	padding-left: 10px;
+	margin-top: -10px;
+	max-width: 400px;
+}
+
+#header > h1, #header > h2, #header > span {
+	text-align: center;
+	margin-right: 200px;
+	margin-left: 400px;
+}
+
+#header > h1 {
+	font-size: 24px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+#header > h2 {
+	margin-top: 5px;
+	margin-bottom: 40px;
+	font-size: 20px;
+}
+
+#header > h2.announce {
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#footer {
+	margin-top: 20px;
+	width: 100%;
+}
+
+/* -------------- Table styles -------------- */
+
+#scoreboard {
+	margin: 5px auto;
+	width: 100%;
+	border: 2px solid #000;
+	border-spacing: 0;
+}
+
+#scoreboard th {
+	padding: 5px 0;
+	border-bottom: 2px solid #000;
+	border-right: 1px solid #aaa;
+}
+
+#scoreboard td {
+	padding: 0;
+	min-width: 30px;
+	text-align: center;
+	border-bottom: 1px solid #555;
+	border-right: 1px solid #aaa;
+}
+
+#scoreboard td:last-child, #scoreboard th:last-child {
+	border-right: none;
+}
+
+td.team {
+	font-size: 1.1em;
+	text-align: left !important;
+	padding: 3px 0 3px 15px !important;
+}
+
+#scoreboard tr:nth-child(even){
+	background-color: #F0F0F0;
+}
+
+#scoreboard > tfoot td {
+	border-top: 2px solid #000;
+}
+
+#scoreboard td.yes {
+    background-color: #8F8;
+}
+
+#scoreboard td.yes.first {
+	background-color: #0D0;
+}
+
+#scoreboard td.no {
+    background-color: #F88;
+}
+
+#scoreboard td.pending {
+    background-color: #FF8 !important;
+}
+
+.muted {
+	font-size: 0.8em;
+	color: #555;
+	display: block;
+}
+
+.text-center {
+	display: block;
+	text-align: center !important;
+}
+
+span.balloon {
+	display: block !important;
+	width: 27px !important;
+	height: 40px !important;
+	margin: 0 auto !important;
+	text-align: center !important;
+	line-height: 30px !important;
+	background: url("../img/balloon.png") -1px -1px no-repeat;
+}
+
+.school-logo {
+  height: 45px;
+  display: block;
+  float: left;
+}
+
+.team-name-school {
+  display: block;
+  float: left;
+  padding-left: 15px;
+  padding-top: 5px;
+}

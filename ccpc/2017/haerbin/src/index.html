@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://s0.2mdn.net/6034540/1500955110833/728X90/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>GRE</title>
+	<style>
+		body{padding:0;margin:0;}
+		.pater{
+			width:726px;
+			height:88px;
+			overflow:hidden;
+			position:relative;
+			cursor:pointer;
+			border: 1px solid #80a54f;
+		}
+		.logo{
+			width: 100%;
+		    position: absolute;
+		    left: 0;
+		    top: 10px;
+		    z-index: 111;
+		}
+		.but:hover .but2{
+			opacity:1;
+		}
+		.gre>div{
+			opacity:0;
+			-webkit-transition:all 0.5s;
+		}
+		.gre>div.in{
+			opacity:1;
+		}
+		.gre .a1{
+			position:absolute;
+			bottom:0;
+		}
+		.gre .a2{
+			position:absolute;
+			top:17px;
+			left:130px;
+			margin:0 auto;
+		}
+		.gre .a3{
+			position:absolute;
+			bottom:0;
+			right: 16px;
+			margin:0 auto;
+		}
+		.gre .b1{
+			position:absolute;
+			bottom:0;
+		}
+		.gre .b2{
+			position:absolute;
+			top:20px;
+			left:130px;
+			margin:0 auto;
+		}
+		.gre .b3{
+			position:absolute;
+			bottom:0;
+			right:30px;
+			margin:0 auto;
+		}
+		.gre .b4{
+			position:absolute;
+			top:142px;
+			left: 0;
+			margin:0 auto;
+		}
+		.gre .b5{
+			position:absolute;
+			top:115px;
+			left: 26px;
+			margin:0 auto;
+		}
+		.gre .b6{
+			position:absolute;
+			top:97px;
+			left: 66px;
+			margin:0 auto;
+		}
+		.gre .b7{
+			position:absolute;
+			top:109px;
+			left: 137px;
+			margin:0 auto;
+		}
+		.gre .b8{
+			position:absolute;
+			top:116px;
+			right: 0;
+			margin:0 auto;
+		}
+		.gre .c1{
+			position:absolute;
+			bottom:0;
+		}
+		.gre .c2{
+			position:absolute;
+			top: 19px;
+		    left: 130px;
+			margin:0 auto;
+		}
+		.gre .c3{
+			position:absolute;
+			bottom:0;
+			right:0;
+			margin:0 auto;
+		}
+		.gre .c4{
+			position:absolute;
+			top: -79px;
+		    left: -114px;
+		    margin: 0 auto;
+		    z-index: 0;
+		}
+		.gre .c5{
+			position:absolute;
+			top:70px;
+			left:99px;
+			margin:0 auto;
+		}
+		.gre .c6{
+			position:absolute;
+			top:178px;
+			left:60px;
+			margin:0 auto;
+		}
+		.gre .d1{
+			position:absolute;
+			bottom:0;
+		}
+		.gre .d2{
+			position:absolute;
+			top:9px;
+			left:140px;
+			margin:0 auto;
+		}
+		.gre .d3{
+			position:absolute;
+			bottom:3px;
+			right: 30px;
+			margin:0 auto;
+		}
+		.gre .d4{
+			position:absolute;
+			top:201px;
+			left:50px;
+			margin:0 auto;
+			z-index: 200;
+		}
+		.gre .d5{
+			position:absolute;
+			top:102px;
+			right:40px;
+			margin:0 auto;
+		}
+		
+		.gre .e1{
+			position:absolute;
+			bottom:0;
+		}
+		.gre .e2{
+			position:absolute;
+			top:15px;
+			left:130px;
+			margin:0 auto;
+		}
+		.gre .e3{
+			position:absolute;
+			bottom:0;
+			right: 18px;
+			margin:0 auto;
+		}
+		.gre .f1{
+			position:absolute;
+			bottom:0;
+		}
+		.gre .f2{
+			position:absolute;
+			top:7px;
+			left:160px;
+			margin:0 auto;
+		}
+		.gre .f3{
+			position:absolute;
+			bottom:11px;
+			left:444px;
+			margin:0 auto;
+		}
+		.gre .f4{
+			position:absolute;
+			top: 192px;
+			left: 0px;
+			right: 0;
+			margin:0 auto;
+		}
+		.gre .but{
+			position:absolute;
+			top:12px;  
+			right: 161px;
+			margin: 0 auto;
+			z-index: 1;
+		}
+		.gre .but2{
+			opacity:0;
+			-webkit-transition:all 0.5s;
+			-ms-transition:all 0.5s;
+			-o-transition:all 0.5s;
+			-moz-transition:all 0.5s;
+			transition:all 0.5s;
+		}
+		.pater:hover .but2{
+			opacity:1;
+		}
+		.flash>div .flash1{
+			opacity: 0;
+			-webkit-transition:all 1s;
+			-ms-transition:all 1s;
+			-o-transition:all 1s;
+			-moz-transition:all 1s;
+			transition:all 1s;
+		}
+		.flash>div .flash2{
+			/*-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+			-o-transform:scale(0.5,0.5);
+			-moz-transform:scale(0.5,0.5);
+			transform:scale(0.5,0.5);*/
+			-webkit-transition:all 0.8s 0.3s;
+			-ms-transition:all 0.8s 0.3s;
+			-o-transition:all 0.8s 0.3s;
+			-moz-transition:all 0.8s 0.3s;
+			transition:all 0.8s 0.3s;
+			opacity:0;
+		}
+		.flash>div .flash3{
+			-webkit-transform:translate(-50px,0px);
+			-ms-transform:translate(-50px,0px);
+			-o-transform:translate(-50px,0px);
+			-moz-transform:translate(-50px,0px);
+			transform:translate(-50px,0px);
+			-webkit-transition:all 0.8s 0.3s;
+			-ms-transition:all 0.8s 0.3s;
+			-o-transition:all 0.8s 0.3s;
+			-moz-transition:all 0.8s 0.3s;
+			transition:all 0.8s 0.3s;
+			opacity:0;
+		}
+		.flash>div .flash4{
+			-webkit-transform:translate(0,50px);
+			-ms-transform:translate(0,50px);
+			-o-transform:translate(0,50px);
+			-moz-transform:translate(0,50px);
+			transform:translate(0,50px);
+			-webkit-transition:all 0.8s 0.3s;
+			-ms-transition:all 0.8s 0.3s;
+			-o-transition:all 0.8s 0.3s;
+			-moz-transition:all 0.8s 0.3s;
+			transition:all 0.8s 0.3s;
+			opacity:0;
+		}
+		.flash>div .flash5{
+			-webkit-transform:translate(50px,0px);
+			-ms-transform:translate(50px,0px);
+			-o-transform:translate(50px,0px);
+			-moz-transform:translate(50px,0px);
+			transform:translate(50px,0px);
+			-webkit-transition:all 0.8s 0.3s;
+			-ms-transition:all 0.8s 0.3s;
+			-o-transition:all 0.8s 0.3s;
+			-moz-transition:all 0.8s 0.3s;
+			transition:all 0.8s 0.3s;
+			opacity:0;
+		}
+		
+		.flash>div .flash6{
+			-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+			-o-transform:scale(0.5,0.5);
+			-moz-transform:scale(0.5,0.5);
+			transform:scale(0.5,0.5);
+			-webkit-transition:all 0.8s 0.5s;
+			-ms-transition:all 0.8s 0.5s;
+			-o-transition:all 0.8s 0.5s;
+			-moz-transition:all 0.8s 0.5s;
+			transition:all 0.8s 0.5s;
+			opacity:0;
+		}
+		.flash>div .flash7{
+			-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+			-o-transform:scale(0.5,0.5);
+			-moz-transform:scale(0.5,0.5);
+			transform:scale(0.5,0.5);
+			-webkit-transition:all 0.8s 0.6s;
+			-ms-transition:all 0.8s 0.6s;
+			-o-transition:all 0.8s 0.6s;
+			-moz-transition:all 0.8s 0.6s;
+			transition:all 0.8s 0.6s;
+			opacity:0;
+		}
+		.flash>div .flash8{
+			-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+			-o-transform:scale(0.5,0.5);
+			-moz-transform:scale(0.5,0.5);
+			transform:scale(0.5,0.5);
+			-webkit-transition:all 0.8s 0.7s;
+			-ms-transition:all 0.8s 0.7s;
+			-o-transition:all 0.8s 0.7s;
+			-moz-transition:all 0.8s 0.7s;
+			transition:all 0.8s 0.7s;
+			opacity:0;
+		}
+		.flash>div .flash9{
+			-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+			-o-transform:scale(0.5,0.5);
+			-moz-transform:scale(0.5,0.5);
+			transform:scale(0.5,0.5);
+			-webkit-transition:all 0.8s 0.8s;
+			-ms-transition:all 0.8s 0.8s;
+			-o-transition:all 0.8s 0.8s;
+			-moz-transition:all 0.8s 0.8s;
+			transition:all 0.8s 0.8s;
+			opacity:0;
+		}
+		.flash>div .flash10{
+			-webkit-transform:scale(0.5,0.5);
+			-ms-transform:scale(0.5,0.5);
+			-o-transform:scale(0.5,0.5);
+			-moz-transform:scale(0.5,0.5);
+			transform:scale(0.5,0.5);
+			-webkit-transition:all 0.8s 0.9s;
+			-ms-transition:all 0.8s 0.9s;
+			-o-transition:all 0.8s 0.9s;
+			-moz-transition:all 0.8s 0.9s;
+			transition:all 0.8s 0.9s;
+			opacity:0;
+		}
+		
+		
+		
+
+		.flash>div.in .flash1{
+			opacity: 1;
+		}
+		.flash>div.in .flash2{
+			/*-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);*/
+			opacity:1;
+		}
+		.flash>div.in .flash3{
+			-webkit-transform:translate(0,0);
+			-ms-transform:translate(0,0);
+			-o-transform:translate(0,0);
+			-moz-transform:translate(0,0);
+			transform:translate(0,0);
+			opacity:1;
+		}
+		.flash>div.in .flash4{
+			-webkit-transform:translate(0,0);
+			-ms-transform:translate(0,0);
+			-o-transform:translate(0,0);
+			-moz-transform:translate(0,0);
+			transform:translate(0,0);
+			opacity:1;
+		}
+		.flash>div.in .flash5{
+			-webkit-transform:translate(0,0);
+			-ms-transform:translate(0,0);
+			-o-transform:translate(0,0);
+			-moz-transform:translate(0,0);
+			transform:translate(0,0);
+			opacity:1;
+		}
+		
+		
+		.flash>div.in .flash6{
+			-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);
+			opacity:1;
+		}
+		.flash>div.in .flash7{
+			-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);
+			opacity:1;
+		}
+		.flash>div.in .flash8{
+			-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);
+			opacity:1;
+		}
+		.flash>div.in .flash9{
+			-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);
+			opacity:1;
+		}
+		.flash>div.in .flash9{
+			-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);
+			opacity:1;
+		}
+		.flash>div.in .flash10{
+			-webkit-transform:scale(1,1);
+			-ms-transform:scale(1,1);
+			-o-transform:scale(1,1);
+			-moz-transform:scale(1,1);
+			transform:scale(1,1);
+			opacity:1;
+		}
+		
+	</style>
+<script type="text/javascript">
+    
+      (function() {
+        var relegateNavigation = '';
+        var handleClickTagMessage = function(e) {
+          try {
+            var eventData = JSON.parse(e.data);
+          } catch (err) {
+            return;
+          }
+          if (eventData.isInitClickTag) {
+            if (eventData.clickTags) {
+              for (var i = 0; i < eventData.clickTags.length; i++) {
+                var clkTag = eventData.clickTags[i];
+                window[clkTag.name] = clkTag.url;
+              }
+            } else if (eventData.clickTag) {
+              window.clickTag = eventData.clickTag;
+            }
+            relegateNavigation = eventData.relegateNavigation;
+          }
+        };
+
+        if (open.call) {
+          window.open = function(open) {
+            return function(url, name, features) {
+              if (relegateNavigation === 'parent') {
+                var message = {'clickTag': url, 'isPostClickTag': true};
+                parent.postMessage(JSON.stringify(message), '*');
+              } else {
+                var args = [url, name];
+                if (features) {
+                  args.push(features);
+                }
+                open.apply(window, args);
+              }
+            };
+          }(window.open);
+        }
+
+        if (window.addEventListener) {
+          window.addEventListener(
+              'message', handleClickTagMessage, false);
+        } else {
+          window.attachEvent('onmessage', handleClickTagMessage);
+        }
+      })();
+    
+  </script></head>
+<body>
+	<div class="pater" onclick="ClickCommand()">
+		
+		<div class="gre flash" id="gre">
+			<div class="">
+				<img src="./p1-bg.jpg" class="a1 flash1">
+				<img src="./p1-1.png" class="a2 flash2">
+				<img src="./p1-2.png" class="a3 flash4">
+			</div>
+			<div class="">
+				<img src="./p1-bg.jpg" class="b1 flash1">
+				<img src="./p2-1.png" class="b2 flash2">
+				<img src="./p2-2.png" class="b3 flash4">
+			</div>
+			<div class="">
+				<img src="./p1-bg.jpg" class="c1 flash1">
+				<img src="./p3-1.png" class="c2 flash2">
+				<img src="./p3-2.png" class="c3 flash5">
+			</div>
+			<div class="">
+				<img src="./p1-bg.jpg" class="d1 flash1">
+				<img src="./p4-1.png" class="d2 flash2">
+				<img src="./p4-2.png" class="d3 flash4">
+			</div>
+			<div class="">
+				<img src="./p1-bg.jpg" class="e1 flash1">
+				<img src="./p5-1.png" class="e2 flash2">
+				<img src="./p5-2.png" class="e3 flash4">
+			</div>
+			<div class="in">
+				<img src="./p1-bg.jpg" class="f1 flash1">
+				<img src="./p6-1.png" class="f2 flash1">
+				<img src="./p6-3.png" class="f3 flash1">
+				<img src="./but.png" class="but flash1">
+				<img src="./but2.png" class="but but2">
+			</div>
+		</div>
+		<div class="logo">
+			<img src="./logo.png">
+		</div>
+	</div>
+    <script>
+    var clickTag = "https://www.ets.org/zh/toefl/ibt/register";
+    function ClickCommand(){
+    	window.open(clickTag)
+    }
+    var inde = -1;
+   	var div = document.getElementById("gre");
+   	var lis = div.getElementsByTagName('div');
+   	var attrtime = [2,2.5,2.5,3,2.5,2.5]
+    var aa = 0;
+
+  
+     	function autoplay(){
+	  		inde++;
+			if(inde>5){
+				inde = -1 ;
+				aa++;
+			}
+			if(aa==1){
+				return;
+			}
+	 	 	for(var i=0;i<=5;i++){
+		  		lis[i].setAttribute("class","");
+		  		if(i==inde){
+		  			lis[i].setAttribute("class","in");
+		  		}
+			}
+			setTimeout(function(){
+				autoplay();
+			},attrtime[inde]*1000)
+   		}
+		setTimeout(function(){
+			autoplay();
+		},10)
+    
+    
+    
+   </script>
+
+
+</body></html>

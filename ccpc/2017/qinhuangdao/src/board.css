@@ -1,0 +1,159 @@
+td {
+	text-align: center; 
+}
+
+thead tr{
+	background-color: #EEEEEE;
+}
+tbody tr:hover{
+	background-color: #EEEEFF;
+	opacity: 0.3;
+}
+
+#board{
+	width:100%;
+}
+#maindiv{
+	width:96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.firstblood {
+	background-color: #00CC00;
+	opacity: 0.7;
+}
+
+.accepted {
+	background-color: #DEFFDE;
+	opacity: 0.7;
+}
+
+.rejected {
+	background-color: #FFD7D7;
+	opacity: 0.7;
+}
+
+.pending {
+	background-color: #FFFFDD;
+	opacity: 0.7;
+}
+
+.untried{
+	background-color: transparent;
+}
+
+.solved {
+	font-size:24px;
+}
+
+.penalty{
+	font-size:16px;
+}
+
+.hidden{
+	display:none;
+}
+
+#popup {
+	position:fixed;
+	background: white;
+	opacity: 0.95;
+	width:400px;
+	right:50px;
+	border:5px solid #0CF;
+	z-index: 9002;
+	padding-bottom: 30px;
+	margin:0px auto;
+	overflow-y: scroll;
+	max-height: 80%;
+}
+
+td.status {
+	text-transform:capitalize;
+	padding: 5px;
+	font-family: monospace;
+	font-size: 15px;
+}
+
+td.time {
+	padding: 3px;
+	font-family: monospace;
+}
+
+td.sub_prob{
+	font-weight: bold;
+}
+div button.close {
+     top:5px;
+     right:5px;
+     position:absolute;
+}
+
+#contest_title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+#time_elapsed {
+	margin-top: 8px;
+	margin-bottom: 1px;
+	font-size: 15px;
+	text-align: center;
+}
+#concern{
+	display: inline-block;
+}
+tr.concerned{
+	background-color: #EEEEFF;
+	font-weight: bold;
+}
+tr.girls td:not(.prob_d){
+	color: #EE00EE;
+}
+tr.unoffical td:not(.prob_d){
+	font-style:italic;
+}
+
+
+@-webkit-keyframes twinkling{
+0%{opacity:1;} 50%{opacity:0.2;} 100%{opacity:1;} }
+@keyframes twinkling{
+0%{opacity:1;} 50%{opacity:0.2;} 100%{opacity:1;} }
+@-moz-keyframes twinkling{
+0%{opacity:1;} 50%{opacity:0.2;} 100%{opacity:1;} }
+@-o-keyframes twinkling{
+0%{opacity:1;} 50%{opacity:0.2;} 100%{opacity:1;} }
+.recent {
+	-webkit-animation: twinkling 1s 10 ease-in-out;
+	animation: twinkling 1s 10 ease-in-out;
+	-moz-animation: twinkling 1s 10 ease-in-out;
+	-o-animation: twinkling 1s 10 ease-in-out;
+}
+a{
+	margin-top: 1px;
+	font-size: 13px;
+}
+td.school{
+	font-size:12px;
+	padding:0px;
+}
+label.team{
+	font-weight:bold;
+	font-size: 24px;
+}
+label.members{
+	font-size: 20px;
+}
+label.school{
+	font-size: 16px;
+}
+small{
+	font-size: 10px;
+}

@@ -1,0 +1,49 @@
+/*
+	WordPress Menubar Plugin
+	LC1.css stylesheet for the LC1 template
+
+	Credits:
+	Internet Broadcast template
+	By Luka Cvrk
+	http://www.solucija.com/
+*/
+
+.LC1 ul { 
+	clear: both;
+	padding: 3px 0px;
+	font: 12px Tahoma, Arial, sans-serif; line-height: 18px;
+	border-top: 6px solid white;
+	border-bottom: 8px solid #9FC7D8;
+	margin: 0;
+	background: white;
+}
+
+.LC1 li { 
+	list-style: none; 
+	display: inline; 
+	margin: 0; 
+}
+
+.LC1 li a, 
+.LC1 li a:visited {
+	text-decoration: none;
+	padding: 4px 14px;
+	margin-right: 2px;
+	background: #808080 url(corner.gif) no-repeat top right;
+	font-weight: bold;
+	color: white;
+}
+
+.LC1 li a:hover {
+	text-decoration: none;
+	background: #6495AB url(corner.gif) no-repeat top right;
+	color: white;
+}
+
+.LC1 li a.selected,
+.LC1 li a.selected:visited,
+.LC1 li a.selected:hover {
+	background: #9FC7D8 url(corner.gif) no-repeat top right;
+	color: #2F637A;
+	padding: 6px 14px;
+}

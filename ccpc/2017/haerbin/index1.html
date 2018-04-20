@@ -1,0 +1,531 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Programming Contest</title>
+<style>
+// based on
+// $Id: standings.css 1983 2009-12-09 02:29:11Z boudreat $
+table {
+	border: 1px solid #ccc; 
+	border-bottom: 0;
+	width: 52.7em;
+	margin-bottom: 2em;
+}
+body {
+   font-family: verdana, arial, tahoma, sans-serif;
+}
+table th {
+	text-align: center;
+	background: #247eca;
+	color: white;
+	padding: 0em; 
+	border: outset 2px #eee8aa;
+}
+table td {
+	border-bottom: 1px solid #DDD; 
+	padding: .0em .0em .0em .5em;
+}
+table tr td.rank {
+	background: transparent; 
+	border: 2px outset #ffffff;
+}
+table tr.gold td.rank {
+	background: #f9d923;
+	border: outset 2px #ffd700;
+}
+table tr.silver td.rank {
+	background: Silver;
+	border: 2px outset sILVER;
+}
+table tr.bronze td.rank {
+	background: #c08e55; 
+	border: outset 2px #c9960c;
+}
+table td.name {
+	padding-left: 2em;
+}
+table th.name{
+	padding-left: 3em; 
+}
+table tr.even td {
+	background: #F7F7F7;
+}
+table tr td.r10 {
+	background: #e9d923;
+	border: 2px outset #DCDCDC;
+}
+table tr td.r9 {
+	background: #e1d963;
+	border: 2px outset #DCDCDC;
+}
+table tr td.r8 {
+	background: #DDD7AA;
+	border: 2px outset #DCDCDC;
+}
+table tr td.r7 {
+	background: #d2d2d2;
+	border: 2px outset #DCDCDC;
+}
+table tr td.r6 {
+	background: #DDCDBD;
+	border: 2px outset #DCDCDC;
+}
+table tr td.r5 {
+	background: #e6e6e6;
+	border: 2px outset #DCDCDC;
+}
+table tr td.r4 {
+	background: #eee;
+	border: 2px outset #f3f3f3;
+}
+table tr td.r3 {
+	background: #F7f7f7;
+	border: 2px outset #f7f7f7;
+}
+div.tail {
+       font-size: .8em;
+       color: #888;
+//width: 65.875em;
+width: 80%;
+ border: 1px solid #ccc;
+margin-left: auto;
+margin-right: auto;
+}
+span.right {
+     float: right;
+}
+
+// troy additions
+table tr.odd {
+        background-color: #0; color: black;
+}
+table tr.even {
+        background-color: #EEEEFF; color: black;
+}
+table tr td.yes {
+        background-color: #00ff00; color: black;
+        text-align: center;
+}
+table tr td.pending {
+        background-color: #ffff00; color: black;
+        text-align: center;
+}
+table tr td.no {
+        background-color: #ff0000; color: black;
+        text-align: center;
+}
+table tr td.center {
+        text-align: center;
+}
+table tr td.right {
+        text-align: right;
+}
+
+</style>
+<meta http-equiv="REFRESH" content="60;">
+<meta http-equiv="EXPIRES" content="0">
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<meta http-equiv="PRAGMA" content="NO-CACHE">
+</head>
+<body>
+<font face="verdana, arial, helvetica" align="right">
+<center>
+<h2>Programming Contest</h2>
+</center>
+</font>
+<center>
+<table cellspacing="0">
+<tbody><tr>
+<th><strong><u>Rank</u></strong></th><th><strong><u>Name</u></strong></th><th><strong><u>Solved</u></strong></th><th><strong><u>Time</u></strong></th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>A</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>B</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>C</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>D</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>E</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>F</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>G</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>H</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>I</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>J</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>K</u></strong>&nbsp;&nbsp;&nbsp;&nbsp;</th><th>Total att/solv</th>
+</tr>
+<tr>
+<td></td><td></td><td></td><td></td><td>
+<center>light green</center>
+</td><td>
+<center>blue</center>
+</td><td>
+<center>purple</center>
+</td><td>
+<center>normal pink</center>
+</td><td>
+<center>yellow</center>
+</td><td>
+<center>white</center>
+</td><td>
+<center>red</center>
+</td><td>
+<center>dark red</center>
+</td><td>
+<center>orange</center>
+</td><td>
+<center>dark blue</center>
+</td><td>
+<center>dark green</center>
+</td>
+</tr>
+<tr class="even">
+<td>1</td><td>B9-清华大学-新日暮里</td><td class="center">10</td><td class="right">917</td><td class="yes">1/3</td><td class="no">3/--</td><td class="yes">1/14</td><td class="yes">2/271</td><td class="yes">1/15</td><td class="yes">2/67</td><td class="yes">1/31</td><td class="yes">1/132</td><td class="yes">2/163</td><td class="yes">1/91</td><td class="yes">1/70</td><td>16/10</td>
+</tr>
+<tr class="odd">
+<td>2</td><td>H2-清华大学-鏼鏼发抖</td><td class="center">10</td><td class="right">1029</td><td class="yes">1/4</td><td class="no">3/--</td><td class="yes">1/22</td><td class="yes">2/282</td><td class="yes">1/12</td><td class="yes">1/73</td><td class="yes">1/44</td><td class="yes">3/231</td><td class="yes">1/133</td><td class="yes">1/116</td><td class="yes">1/52</td><td>16/10</td>
+</tr>
+<tr class="even">
+<td>3</td><td>L8-浙江大学-Reconquista</td><td class="center">9</td><td class="right">884</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">1/25</td><td class="center">0/--</td><td class="yes">1/9</td><td class="yes">1/111</td><td class="yes">1/64</td><td class="yes">1/292</td><td class="yes">1/224</td><td class="yes">1/91</td><td class="yes">2/37</td><td>10/9</td>
+</tr>
+<tr class="odd">
+<td>4</td><td>J1-上海交通大学-夜幕</td><td class="center">9</td><td class="right">1037</td><td class="yes">1/10</td><td class="no">3/--</td><td class="yes">1/26</td><td class="no">1/--</td><td class="yes">2/15</td><td class="yes">1/155</td><td class="yes">2/80</td><td class="yes">4/287</td><td class="yes">2/199</td><td class="yes">1/43</td><td class="yes">1/102</td><td>19/9</td>
+</tr>
+<tr class="even">
+<td>5</td><td>F1-旷视科技-Face++-RetiredClub</td><td class="center">9</td><td class="right">1236</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">1/6</td><td class="yes">2/269</td><td class="yes">1/51</td><td class="yes">8/213</td><td class="yes">2/190</td><td class="yes">4/102</td><td class="yes">2/121</td><td>22/9</td>
+</tr>
+<tr class="odd">
+<td>6</td><td>K8-上海交通大学-近王者</td><td class="center">8</td><td class="right">760</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">1/21</td><td class="center">0/--</td><td class="yes">1/10</td><td class="yes">1/158</td><td class="yes">2/43</td><td class="yes">2/216</td><td class="center">0/--</td><td class="yes">3/165</td><td class="yes">1/63</td><td>12/8</td>
+</tr>
+<tr class="even">
+<td>7</td><td>E8-复旦大学-Wood Cube</td><td class="center">8</td><td class="right">842</td><td class="yes">2/17</td><td class="center">0/--</td><td class="yes">1/21</td><td class="no">5/--</td><td class="yes">1/5</td><td class="yes">1/191</td><td class="yes">1/48</td><td class="center">0/--</td><td class="yes">6/287</td><td class="yes">1/66</td><td class="yes">1/87</td><td>19/8</td>
+</tr>
+<tr class="odd">
+<td>8</td><td>A5-复旦大学-独裁者</td><td class="center">8</td><td class="right">897</td><td class="yes">1/3</td><td class="center">0/--</td><td class="yes">1/17</td><td class="center">0/--</td><td class="yes">1/7</td><td class="yes">4/291</td><td class="yes">2/68</td><td class="no">8/--</td><td class="yes">4/144</td><td class="yes">1/135</td><td class="yes">1/92</td><td>23/8</td>
+</tr>
+<tr class="even">
+<td>9</td><td>E2-浙江大学-Legilimens</td><td class="center">8</td><td class="right">1017</td><td class="yes">2/37</td><td class="center">0/--</td><td class="yes">4/62</td><td class="center">0/--</td><td class="yes">1/10</td><td class="yes">1/187</td><td class="yes">2/80</td><td class="center">0/--</td><td class="yes">3/250</td><td class="yes">3/125</td><td class="yes">2/66</td><td>18/8</td>
+</tr>
+<tr class="odd">
+<td>10</td><td>F4-上海交通大学-魔典</td><td class="center">8</td><td class="right">1091</td><td class="yes">1/5</td><td class="center">0/--</td><td class="yes">5/89</td><td class="center">0/--</td><td class="yes">1/8</td><td class="yes">1/239</td><td class="yes">2/30</td><td class="center">0/--</td><td class="yes">6/264</td><td class="yes">2/191</td><td class="yes">1/65</td><td>19/8</td>
+</tr>
+<tr class="even">
+<td>11</td><td>D7-北京邮电大学-格雷科技</td><td class="center">8</td><td class="right">1133</td><td class="yes">1/7</td><td class="center">0/--</td><td class="yes">1/46</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">2/144</td><td class="yes">2/285</td><td class="yes">1/255</td><td class="yes">2/171</td><td class="yes">3/111</td><td>13/8</td>
+</tr>
+<tr class="odd">
+<td>12</td><td>C6-北京航空航天大学-黑人问号.jpg</td><td class="center">7</td><td class="right">591</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">1/34</td><td class="center">0/--</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">1/49</td><td class="no">1/--</td><td class="yes">3/155</td><td class="yes">1/143</td><td class="yes">2/126</td><td>11/7</td>
+</tr>
+<tr class="even">
+<td>13</td><td>H9-南京大学-StayReal</td><td class="center">7</td><td class="right">663</td><td class="yes">1/17</td><td class="center">0/--</td><td class="yes">1/30</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">3/113</td><td class="yes">1/192</td><td class="no">3/--</td><td class="yes">2/148</td><td class="yes">1/89</td><td>13/7</td>
+</tr>
+<tr class="odd">
+<td>14</td><td>K3-北京师范大学-QQ奶糖</td><td class="center">7</td><td class="right">674</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">1/33</td><td class="center">0/--</td><td class="yes">1/14</td><td class="no">3/--</td><td class="yes">1/83</td><td class="center">0/--</td><td class="yes">2/273</td><td class="yes">2/169</td><td class="yes">1/49</td><td>12/7</td>
+</tr>
+<tr class="even">
+<td>15</td><td>I2-华中科技大学-星云</td><td class="center">7</td><td class="right">702</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">1/34</td><td class="center">0/--</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">1/121</td><td class="center">0/--</td><td class="yes">3/218</td><td class="yes">1/210</td><td class="yes">1/63</td><td>9/7</td>
+</tr>
+<tr class="odd">
+<td>16</td><td>B3-中山大学-SYSU_深黑幼想</td><td class="center">7</td><td class="right">731</td><td class="yes">1/21</td><td class="center">0/--</td><td class="yes">2/63</td><td class="center">0/--</td><td class="yes">1/12</td><td class="no">3/--</td><td class="yes">2/104</td><td class="no">1/--</td><td class="yes">2/239</td><td class="yes">2/123</td><td class="yes">3/69</td><td>17/7</td>
+</tr>
+<tr class="even">
+<td>17</td><td>A10-同济大学-码出中国梦</td><td class="center">7</td><td class="right">825</td><td class="yes">1/9</td><td class="no">1/--</td><td class="yes">3/37</td><td class="no">1/--</td><td class="yes">2/39</td><td class="no">1/--</td><td class="yes">2/90</td><td class="no">5/--</td><td class="yes">3/273</td><td class="yes">1/175</td><td class="yes">1/82</td><td>21/7</td>
+</tr>
+<tr class="odd">
+<td>18</td><td>G4-广东工业大学-无尽挑战</td><td class="center">7</td><td class="right">841</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">3/50</td><td class="center">0/--</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">1/62</td><td class="center">0/--</td><td class="yes">4/287</td><td class="yes">1/173</td><td class="yes">1/141</td><td>12/7</td>
+</tr>
+<tr class="even">
+<td>19</td><td>J6-北京大学-Miracle</td><td class="center">7</td><td class="right">992</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">2/174</td><td class="yes">1/280</td><td class="no">1/--</td><td class="yes">5/194</td><td class="yes">4/152</td><td>16/7</td>
+</tr>
+<tr class="odd">
+<td>20</td><td>C3-华中师范大学-暴力打牌</td><td class="center">7</td><td class="right">1023</td><td class="yes">1/31</td><td class="center">0/--</td><td class="yes">1/46</td><td class="center">0/--</td><td class="yes">1/23</td><td class="yes">4/299</td><td class="yes">3/173</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/148</td><td class="yes">1/203</td><td>12/7</td>
+</tr>
+<tr class="even">
+<td>21</td><td>I3-南京航空航天大学-文蛤包包</td><td class="center">7</td><td class="right">1388</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">5/55</td><td class="center">0/--</td><td class="yes">2/23</td><td class="yes">3/175</td><td class="yes">5/96</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">21/287</td><td class="yes">1/118</td><td>38/7</td>
+</tr>
+<tr class="odd">
+<td>22</td><td>H5-杭州电子科技大学-HDU_AcmKeHaoWanLe</td><td class="center">6</td><td class="right">295</td><td class="yes">1/9</td><td class="center">0/--</td><td class="yes">2/24</td><td class="center">0/--</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">1/40</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/134</td><td class="yes">1/60</td><td>7/6</td>
+</tr>
+<tr class="even">
+<td>23</td><td>C8-哈尔滨工业大学-为什么您这么强</td><td class="center">6</td><td class="right">375</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">2/28</td><td class="no">4/--</td><td class="yes">1/10</td><td class="center">0/--</td><td class="yes">2/68</td><td class="no">1/--</td><td class="center">0/--</td><td class="yes">1/114</td><td class="yes">2/91</td><td>14/6</td>
+</tr>
+<tr class="odd">
+<td>24</td><td>C4-南京大学-我，青玉德，吃鸡！</td><td class="center">6</td><td class="right">383</td><td class="yes">1/23</td><td class="center">0/--</td><td class="yes">1/36</td><td class="center">0/--</td><td class="yes">1/11</td><td class="no">14/--</td><td class="yes">1/82</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/146</td><td class="yes">1/65</td><td>21/6</td>
+</tr>
+<tr class="even">
+<td>25</td><td>L10-浙江大学城市学院-FD_CLUB</td><td class="center">6</td><td class="right">388</td><td class="yes">1/6</td><td class="center">0/--</td><td class="yes">1/61</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">1/85</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">2/132</td><td class="yes">2/51</td><td>9/6</td>
+</tr>
+<tr class="odd">
+<td>26</td><td>C2-东北大学-淘汰之刃</td><td class="center">6</td><td class="right">424</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">1/48</td><td class="center">0/--</td><td class="yes">1/7</td><td class="center">0/--</td><td class="yes">1/75</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/171</td><td class="yes">1/108</td><td>6/6</td>
+</tr>
+<tr class="even">
+<td>27</td><td>J9-中山大学-中山大学_自动钢琴</td><td class="center">6</td><td class="right">439</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">1/35</td><td class="center">0/--</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">3/130</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/146</td><td class="yes">1/61</td><td>8/6</td>
+</tr>
+<tr class="odd">
+<td>28</td><td>F2-重庆大学-人工智能我队友</td><td class="center">6</td><td class="right">465</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">2/48</td><td class="center">0/--</td><td class="yes">1/4</td><td class="no">4/--</td><td class="yes">3/127</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/173</td><td class="yes">1/39</td><td>13/6</td>
+</tr>
+<tr class="even">
+<td>29</td><td>A8-电子科技大学-UESTC_星幻</td><td class="center">6</td><td class="right">468</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">1/23</td><td class="center">0/--</td><td class="yes">2/30</td><td class="center">0/--</td><td class="yes">2/114</td><td class="no">3/--</td><td class="no">2/--</td><td class="yes">1/149</td><td class="yes">2/81</td><td>14/6</td>
+</tr>
+<tr class="odd">
+<td>30</td><td>L1-天津大学-Tju_WannaCry</td><td class="center">6</td><td class="right">496</td><td class="yes">1/10</td><td class="center">0/--</td><td class="yes">1/29</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">3/146</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/186</td><td class="yes">1/71</td><td>8/6</td>
+</tr>
+<tr class="even">
+<td>31</td><td>D9-大连理工大学-一步之遥</td><td class="center">6</td><td class="right">562</td><td class="yes">1/4</td><td class="center">0/--</td><td class="yes">1/21</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">3/153</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/199</td><td class="yes">1/111</td><td>9/6</td>
+</tr>
+<tr class="odd">
+<td>32</td><td>B1-西安交通大学-说学逗唱</td><td class="center">6</td><td class="right">570</td><td class="yes">1/18</td><td class="center">0/--</td><td class="yes">3/49</td><td class="center">0/--</td><td class="yes">1/9</td><td class="center">0/--</td><td class="yes">3/108</td><td class="center">0/--</td><td class="no">9/--</td><td class="yes">1/168</td><td class="yes">3/98</td><td>21/6</td>
+</tr>
+<tr class="even">
+<td>33</td><td>L5-武汉大学-丝滑拿铁</td><td class="center">6</td><td class="right">578</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">2/42</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">4/123</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">1/177</td><td class="yes">1/134</td><td>11/6</td>
+</tr>
+<tr class="odd">
+<td>34</td><td>B7-北京交通大学-终末之冬</td><td class="center">6</td><td class="right">592</td><td class="yes">1/5</td><td class="center">0/--</td><td class="yes">3/41</td><td class="center">0/--</td><td class="yes">2/22</td><td class="no">2/--</td><td class="yes">2/147</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/182</td><td class="yes">2/75</td><td>14/6</td>
+</tr>
+<tr class="even">
+<td>35</td><td>F9-中国科学院大学-天才调试少年</td><td class="center">6</td><td class="right">613</td><td class="yes">1/7</td><td class="center">0/--</td><td class="yes">1/50</td><td class="center">0/--</td><td class="yes">1/22</td><td class="center">0/--</td><td class="no">2/--</td><td class="yes">1/120</td><td class="center">0/--</td><td class="yes">1/280</td><td class="yes">1/134</td><td>8/6</td>
+</tr>
+<tr class="odd">
+<td>36</td><td>I8-哈尔滨理工大学-哈理工1队</td><td class="center">6</td><td class="right">635</td><td class="yes">2/19</td><td class="center">0/--</td><td class="yes">1/32</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">4/141</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/242</td><td class="yes">1/108</td><td>10/6</td>
+</tr>
+<tr class="even">
+<td>37</td><td>I7-电子科技大学-UESTC_鬼才</td><td class="center">6</td><td class="right">646</td><td class="yes">1/16</td><td class="center">0/--</td><td class="yes">3/42</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">2/173</td><td class="center">0/--</td><td class="no">4/--</td><td class="yes">2/194</td><td class="yes">1/127</td><td>14/6</td>
+</tr>
+<tr class="odd">
+<td>38</td><td>E10-重庆邮电大学-无限键制</td><td class="center">6</td><td class="right">658</td><td class="yes">1/19</td><td class="center">0/--</td><td class="yes">1/49</td><td class="center">0/--</td><td class="yes">1/16</td><td class="center">0/--</td><td class="yes">1/234</td><td class="yes">2/236</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/84</td><td>7/6</td>
+</tr>
+<tr class="even">
+<td>39</td><td>E6-中国科学技术大学-蕾远</td><td class="center">6</td><td class="right">684</td><td class="yes">1/17</td><td class="center">0/--</td><td class="yes">2/46</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">2/133</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">5/252</td><td class="yes">1/102</td><td>12/6</td>
+</tr>
+<tr class="odd">
+<td>40</td><td>F7-西安电子科技大学-圣花</td><td class="center">6</td><td class="right">727</td><td class="yes">1/25</td><td class="center">0/--</td><td class="yes">2/45</td><td class="center">0/--</td><td class="yes">1/16</td><td class="center">0/--</td><td class="yes">4/158</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/247</td><td class="yes">2/136</td><td>11/6</td>
+</tr>
+<tr class="even">
+<td>41</td><td>A6-北京化工大学-韦天魔术棒</td><td class="center">6</td><td class="right">728</td><td class="yes">1/17</td><td class="center">0/--</td><td class="yes">1/63</td><td class="center">0/--</td><td class="yes">2/29</td><td class="no">1/--</td><td class="yes">1/234</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">4/207</td><td class="yes">2/78</td><td>12/6</td>
+</tr>
+<tr class="odd">
+<td>42</td><td>H8-哈尔滨工程大学-轻轻的一个稳</td><td class="center">6</td><td class="right">733</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">3/86</td><td class="center">0/--</td><td class="yes">1/19</td><td class="no">2/--</td><td class="yes">2/165</td><td class="no">2/--</td><td class="center">0/--</td><td class="yes">2/260</td><td class="yes">1/115</td><td>14/6</td>
+</tr>
+<tr class="even">
+<td>43</td><td>I6-浙江师范大学-舞动青春</td><td class="center">6</td><td class="right">765</td><td class="yes">1/43</td><td class="center">0/--</td><td class="yes">5/66</td><td class="center">0/--</td><td class="yes">1/29</td><td class="center">0/--</td><td class="yes">1/93</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">4/258</td><td class="yes">1/136</td><td>13/6</td>
+</tr>
+<tr class="odd">
+<td>44</td><td>D6-四川大学-野草</td><td class="center">6</td><td class="right">779</td><td class="yes">1/43</td><td class="center">0/--</td><td class="yes">2/54</td><td class="center">0/--</td><td class="yes">1/9</td><td class="center">0/--</td><td class="yes">4/222</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/242</td><td class="yes">1/109</td><td>11/6</td>
+</tr>
+<tr class="even">
+<td>45</td><td>E7-广州大学-火之高兴</td><td class="center">6</td><td class="right">785</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">3/48</td><td class="center">0/--</td><td class="yes">2/22</td><td class="center">0/--</td><td class="yes">3/217</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/273</td><td class="yes">1/110</td><td>11/6</td>
+</tr>
+<tr class="odd">
+<td>46</td><td>G8-北京师范大学-洛伦兹</td><td class="center">6</td><td class="right">807</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">2/56</td><td class="center">0/--</td><td class="yes">2/23</td><td class="center">0/--</td><td class="yes">3/276</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/190</td><td class="yes">4/110</td><td>13/6</td>
+</tr>
+<tr class="even">
+<td>47</td><td>H10-深圳大学-喵帕斯</td><td class="center">6</td><td class="right">839</td><td class="yes">2/12</td><td class="center">0/--</td><td class="yes">3/64</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">3/179</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">3/266</td><td class="yes">1/165</td><td>13/6</td>
+</tr>
+<tr class="odd">
+<td>48</td><td>I10-北京邮电大学-打得不错</td><td class="center">6</td><td class="right">841</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">1/34</td><td class="center">0/--</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">5/253</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">3/238</td><td class="yes">3/137</td><td>14/6</td>
+</tr>
+<tr class="even">
+<td>49</td><td>C1-北京大学-红太阳果太阳</td><td class="center">6</td><td class="right">845</td><td class="yes">1/7</td><td class="center">0/--</td><td class="yes">2/32</td><td class="center">0/--</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">6/195</td><td class="center">0/--</td><td class="no">4/--</td><td class="yes">4/237</td><td class="yes">1/179</td><td>19/6</td>
+</tr>
+<tr class="odd">
+<td>50</td><td>J5-长沙理工大学-乌鸦坐飞机</td><td class="center">6</td><td class="right">853</td><td class="yes">1/6</td><td class="center">0/--</td><td class="yes">3/52</td><td class="center">0/--</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">1/114</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">8/291</td><td class="yes">2/179</td><td>16/6</td>
+</tr>
+<tr class="even">
+<td>51</td><td>I4-湖南大学 -乌龙茶</td><td class="center">6</td><td class="right">863</td><td class="yes">1/26</td><td class="center">0/--</td><td class="yes">6/155</td><td class="center">0/--</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">6/252</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/61</td><td class="yes">2/138</td><td>17/6</td>
+</tr>
+<tr class="odd">
+<td>52</td><td>L4-山东大学-拱啊拱啊拱</td><td class="center">6</td><td class="right">1041</td><td class="yes">1/16</td><td class="center">0/--</td><td class="yes">3/84</td><td class="center">0/--</td><td class="yes">2/30</td><td class="center">0/--</td><td class="yes">6/282</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/277</td><td class="yes">1/172</td><td>15/6</td>
+</tr>
+<tr class="even">
+<td>53</td><td>D3-华东师范大学-为什么过了样例还不对</td><td class="center">5</td><td class="right">283</td><td class="yes">1/10</td><td class="center">0/--</td><td class="yes">1/39</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">2/138</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">7/--</td><td class="yes">1/62</td><td>13/5</td>
+</tr>
+<tr class="odd">
+<td>54</td><td>G3-杭州师范大学-桥头抢个握把</td><td class="center">5</td><td class="right">328</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">2/35</td><td class="center">0/--</td><td class="yes">2/22</td><td class="center">0/--</td><td class="yes">2/113</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">8/--</td><td class="yes">1/90</td><td>16/5</td>
+</tr>
+<tr class="even">
+<td>55</td><td>H1-北京理工大学-正在登录</td><td class="center">5</td><td class="right">343</td><td class="yes">1/7</td><td class="center">0/--</td><td class="yes">3/67</td><td class="center">0/--</td><td class="yes">1/9</td><td class="center">0/--</td><td class="yes">1/131</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">6/--</td><td class="yes">1/89</td><td>13/5</td>
+</tr>
+<tr class="odd">
+<td>56</td><td>H6-中国传媒大学-飞翔的小鱼</td><td class="center">5</td><td class="right">368</td><td class="yes">1/5</td><td class="center">0/--</td><td class="yes">2/49</td><td class="center">0/--</td><td class="yes">1/10</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/190</td><td class="yes">1/94</td><td>6/5</td>
+</tr>
+<tr class="even">
+<td>57</td><td>G7-福建工程学院-迷路的指针</td><td class="center">5</td><td class="right">386</td><td class="yes">1/31</td><td class="center">0/--</td><td class="yes">1/53</td><td class="center">0/--</td><td class="yes">1/21</td><td class="center">0/--</td><td class="yes">2/163</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/98</td><td>6/5</td>
+</tr>
+<tr class="odd">
+<td>58</td><td>H7-山东理工大学-队友大物挂了，分期贷款重修</td><td class="center">5</td><td class="right">387</td><td class="yes">1/45</td><td class="center">0/--</td><td class="yes">1/69</td><td class="center">0/--</td><td class="yes">1/26</td><td class="center">0/--</td><td class="yes">1/134</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/113</td><td>5/5</td>
+</tr>
+<tr class="even">
+<td>59</td><td>K7-南开大学-达拉斯</td><td class="center">5</td><td class="right">397</td><td class="yes">1/7</td><td class="center">0/--</td><td class="yes">3/39</td><td class="center">0/--</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">3/139</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">6/--</td><td class="yes">2/100</td><td>16/5</td>
+</tr>
+<tr class="odd">
+<td>60</td><td>A3-长春理工大学-嗨呀好气呀</td><td class="center">5</td><td class="right">401</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">3/25</td><td class="center">0/--</td><td class="yes">1/5</td><td class="center">0/--</td><td class="yes">4/81</td><td class="no">1/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">3/142</td><td>13/5</td>
+</tr>
+<tr class="even">
+<td>61</td><td>K6-吉林大学-黑框眼镜</td><td class="center">5</td><td class="right">425</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">2/37</td><td class="center">0/--</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">3/159</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">8/--</td><td class="yes">1/136</td><td>16/5</td>
+</tr>
+<tr class="odd">
+<td>62</td><td>B4-河海大学-在这炸丸子正宗</td><td class="center">5</td><td class="right">433</td><td class="yes">1/5</td><td class="center">0/--</td><td class="yes">1/51</td><td class="center">0/--</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">5/202</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/80</td><td>9/5</td>
+</tr>
+<tr class="even">
+<td>63</td><td>F10-中国石油大学（华东）-为荣誉而战</td><td class="center">5</td><td class="right">440</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">2/42</td><td class="center">0/--</td><td class="yes">1/18</td><td class="center">0/--</td><td class="yes">1/104</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">4/204</td><td>10/5</td>
+</tr>
+<tr class="odd">
+<td>64</td><td>K4-南华大学-随便@USC</td><td class="center">5</td><td class="right">452</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">6/54</td><td class="center">0/--</td><td class="yes">1/21</td><td class="no">3/--</td><td class="yes">1/141</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/102</td><td>14/5</td>
+</tr>
+<tr class="even">
+<td>65</td><td>E3-中国矿业大学-我的队名不可能让你看到</td><td class="center">5</td><td class="right">457</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">1/49</td><td class="center">0/--</td><td class="yes">1/18</td><td class="center">0/--</td><td class="yes">1/226</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/149</td><td>5/5</td>
+</tr>
+<tr class="odd">
+<td>66</td><td>E1-浙江工业大学-ACarp</td><td class="center">5</td><td class="right">464</td><td class="yes">1/33</td><td class="center">0/--</td><td class="yes">3/70</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">1/136</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">1/171</td><td>8/5</td>
+</tr>
+<tr class="even">
+<td>67</td><td>G1-武汉大学-听歌喝茶队</td><td class="center">5</td><td class="right">496</td><td class="yes">1/63</td><td class="center">0/--</td><td class="yes">1/26</td><td class="center">0/--</td><td class="yes">1/36</td><td class="center">0/--</td><td class="yes">2/210</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">3/141</td><td>9/5</td>
+</tr>
+<tr class="odd">
+<td>68</td><td>F5-中南民族大学-奉均衡之命</td><td class="center">5</td><td class="right">505</td><td class="yes">1/8</td><td class="center">0/--</td><td class="yes">1/63</td><td class="center">0/--</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">2/228</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/146</td><td>7/5</td>
+</tr>
+<tr class="even">
+<td>69</td><td>A4-河南工业大学-我的内心开始波动</td><td class="center">5</td><td class="right">518</td><td class="yes">2/16</td><td class="center">0/--</td><td class="yes">5/87</td><td class="center">0/--</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">1/99</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">3/--</td><td class="yes">1/196</td><td>13/5</td>
+</tr>
+<tr class="odd">
+<td>70</td><td>J4-福州大学-花火</td><td class="center">5</td><td class="right">520</td><td class="yes">1/6</td><td class="center">0/--</td><td class="yes">3/31</td><td class="center">0/--</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">3/256</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">10/--</td><td class="yes">3/95</td><td>21/5</td>
+</tr>
+<tr class="even">
+<td>71</td><td>D4-浙江大学宁波理工学院-侧耳倾听</td><td class="center">5</td><td class="right">535</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">1/47</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">1/256</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">2/184</td><td>7/5</td>
+</tr>
+<tr class="odd">
+<td>72</td><td>K2-东北林业大学-有何贵干</td><td class="center">5</td><td class="right">537</td><td class="yes">1/17</td><td class="center">0/--</td><td class="yes">1/41</td><td class="center">0/--</td><td class="yes">3/28</td><td class="center">0/--</td><td class="yes">4/205</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/146</td><td>10/5</td>
+</tr>
+<tr class="even">
+<td>73</td><td>J2-上海大学-后天下之乐而乐</td><td class="center">5</td><td class="right">557</td><td class="yes">1/54</td><td class="center">0/--</td><td class="yes">3/65</td><td class="center">0/--</td><td class="yes">2/23</td><td class="center">0/--</td><td class="yes">1/212</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">4/--</td><td class="yes">3/103</td><td>14/5</td>
+</tr>
+<tr class="odd">
+<td>74</td><td>K5-天津工业大学-90后老男人</td><td class="center">5</td><td class="right">564</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">2/48</td><td class="center">0/--</td><td class="yes">1/18</td><td class="center">0/--</td><td class="yes">2/198</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">3/208</td><td>9/5</td>
+</tr>
+<tr class="even">
+<td>75</td><td>I5-宁波大学-你这是为难我胖虎</td><td class="center">5</td><td class="right">616</td><td class="yes">1/19</td><td class="center">0/--</td><td class="yes">2/58</td><td class="center">0/--</td><td class="yes">1/18</td><td class="center">0/--</td><td class="yes">4/288</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">11/--</td><td class="yes">1/153</td><td>20/5</td>
+</tr>
+<tr class="odd">
+<td>76</td><td>A7-华东交通大学-推移魔法哇咔咔</td><td class="center">5</td><td class="right">622</td><td class="yes">1/82</td><td class="center">0/--</td><td class="yes">3/76</td><td class="center">0/--</td><td class="yes">1/14</td><td class="center">0/--</td><td class="yes">1/221</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">3/149</td><td>9/5</td>
+</tr>
+<tr class="even">
+<td>77</td><td>K9-华南理工大学软件学院-我的表弟不会快速傅里叶变换</td><td class="center">5</td><td class="right">668</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">2/71</td><td class="center">0/--</td><td class="yes">3/30</td><td class="center">0/--</td><td class="yes">8/287</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/68</td><td>15/5</td>
+</tr>
+<tr class="odd">
+<td>78</td><td>F6-中国人民解放军信息工程大学-水飞了</td><td class="center">5</td><td class="right">682</td><td class="yes">1/74</td><td class="center">0/--</td><td class="yes">2/81</td><td class="center">0/--</td><td class="yes">1/23</td><td class="center">0/--</td><td class="yes">7/217</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">5/--</td><td class="yes">1/147</td><td>17/5</td>
+</tr>
+<tr class="even">
+<td>79</td><td>D5-东北师范大学-绯色月下</td><td class="center">5</td><td class="right">690</td><td class="yes">2/71</td><td class="center">0/--</td><td class="yes">1/95</td><td class="center">0/--</td><td class="yes">3/19</td><td class="center">0/--</td><td class="no">8/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/262</td><td class="yes">3/143</td><td>19/5</td>
+</tr>
+<tr class="odd">
+<td>80</td><td>L7-河南大学-听说队名不能奶自己</td><td class="center">5</td><td class="right">874</td><td class="yes">1/34</td><td class="center">0/--</td><td class="yes">4/72</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">7/290</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/265</td><td>15/5</td>
+</tr>
+<tr class="even">
+<td>81</td><td>B5-苏州大学-为什么不问问海绵宝宝</td><td class="center">4</td><td class="right">166</td><td class="yes">1/18</td><td class="center">0/--</td><td class="yes">2/42</td><td class="center">0/--</td><td class="yes">1/11</td><td class="center">0/--</td><td class="no">5/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/75</td><td>10/4</td>
+</tr>
+<tr class="odd">
+<td>82</td><td>G5-浙江工业大学之江学院-打铁也报销</td><td class="center">4</td><td class="right">180</td><td class="yes">1/31</td><td class="center">0/--</td><td class="yes">3/26</td><td class="center">0/--</td><td class="yes">1/16</td><td class="center">0/--</td><td class="no">17/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/67</td><td>23/4</td>
+</tr>
+<tr class="even">
+<td>83</td><td>J3-湘潭大学-XTU_哈尔滨太冷了</td><td class="center">4</td><td class="right">198</td><td class="yes">1/10</td><td class="center">0/--</td><td class="yes">1/61</td><td class="center">0/--</td><td class="yes">2/32</td><td class="center">0/--</td><td class="no">9/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/75</td><td>14/4</td>
+</tr>
+<tr class="odd">
+<td>84</td><td>D8-青岛大学-铁牌我来了</td><td class="center">4</td><td class="right">214</td><td class="yes">1/12</td><td class="center">0/--</td><td class="yes">2/89</td><td class="center">0/--</td><td class="yes">1/16</td><td class="center">0/--</td><td class="no">4/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">1/77</td><td>10/4</td>
+</tr>
+<tr class="even">
+<td>85</td><td>B8-东北大学秦皇岛分校-uLTD</td><td class="center">4</td><td class="right">227</td><td class="yes">1/21</td><td class="center">0/--</td><td class="yes">3/48</td><td class="center">0/--</td><td class="yes">1/15</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/103</td><td>6/4</td>
+</tr>
+<tr class="odd">
+<td>86</td><td>I1-中北大学-老潘的AC梦工厂</td><td class="center">4</td><td class="right">233</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">1/58</td><td class="center">0/--</td><td class="yes">2/32</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/112</td><td>5/4</td>
+</tr>
+<tr class="even">
+<td>87</td><td>H4-南京邮电大学-从零开始</td><td class="center">4</td><td class="right">246</td><td class="yes">1/6</td><td class="center">0/--</td><td class="yes">1/65</td><td class="center">0/--</td><td class="yes">3/33</td><td class="center">0/--</td><td class="no">2/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/102</td><td>8/4</td>
+</tr>
+<tr class="odd">
+<td>88</td><td>C7-华侨大学-HQU_Masters</td><td class="center">4</td><td class="right">247</td><td class="yes">1/19</td><td class="center">0/--</td><td class="yes">1/69</td><td class="center">0/--</td><td class="yes">1/29</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/110</td><td>5/4</td>
+</tr>
+<tr class="even">
+<td>89</td><td>L2-浙江大学宁波理工学院-雷霆之怒</td><td class="center">4</td><td class="right">283</td><td class="yes">1/15</td><td class="center">0/--</td><td class="yes">4/68</td><td class="center">0/--</td><td class="yes">1/26</td><td class="center">0/--</td><td class="no">5/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/94</td><td>13/4</td>
+</tr>
+<tr class="odd">
+<td>90</td><td>C10-东南大学-空姐不用scanf</td><td class="center">4</td><td class="right">289</td><td class="yes">2/13</td><td class="center">0/--</td><td class="yes">2/26</td><td class="center">0/--</td><td class="yes">1/17</td><td class="center">0/--</td><td class="no">11/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">3/--</td><td class="yes">3/153</td><td>22/4</td>
+</tr>
+<tr class="even">
+<td>91</td><td>D2-中国地质大学（北京）-一起哈皮</td><td class="center">4</td><td class="right">294</td><td class="yes">1/11</td><td class="center">0/--</td><td class="yes">6/37</td><td class="center">0/--</td><td class="yes">1/12</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/114</td><td>10/4</td>
+</tr>
+<tr class="odd">
+<td>92</td><td>B10-福建师范大学-福州小学三年级</td><td class="center">4</td><td class="right">298</td><td class="yes">1/21</td><td class="center">0/--</td><td class="yes">3/54</td><td class="center">0/--</td><td class="yes">1/29</td><td class="center">0/--</td><td class="no">3/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/154</td><td>9/4</td>
+</tr>
+<tr class="even">
+<td>93</td><td>E9-河南农业大学-会喵喵的汪</td><td class="center">4</td><td class="right">304</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">1/49</td><td class="center">0/--</td><td class="yes">1/16</td><td class="center">0/--</td><td class="no">3/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">2/--</td><td class="yes">3/179</td><td>11/4</td>
+</tr>
+<tr class="odd">
+<td>94</td><td>H3-浙江工商大学-浙江工商大学</td><td class="center">4</td><td class="right">316</td><td class="yes">2/62</td><td class="center">0/--</td><td class="yes">1/49</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="no">1/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">1/--</td><td class="yes">2/152</td><td>8/4</td>
+</tr>
+<tr class="even">
+<td>95</td><td>J8-江南大学-三只小学生</td><td class="center">4</td><td class="right">322</td><td class="yes">1/22</td><td class="center">0/--</td><td class="yes">2/42</td><td class="center">0/--</td><td class="yes">1/17</td><td class="center">0/--</td><td class="no">13/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">4/201</td><td>21/4</td>
+</tr>
+<tr class="odd">
+<td>96</td><td>E5-西安邮电大学-破晓</td><td class="center">4</td><td class="right">343</td><td class="yes">1/20</td><td class="center">0/--</td><td class="yes">2/115</td><td class="center">0/--</td><td class="yes">1/29</td><td class="center">0/--</td><td class="no">7/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/159</td><td>12/4</td>
+</tr>
+<tr class="even">
+<td>97</td><td>G10-南京理工大学-求求你们别秀了</td><td class="center">4</td><td class="right">349</td><td class="yes">1/55</td><td class="center">0/--</td><td class="yes">2/66</td><td class="center">0/--</td><td class="yes">2/28</td><td class="center">0/--</td><td class="no">3/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/140</td><td>10/4</td>
+</tr>
+<tr class="odd">
+<td>98</td><td>F3-浙江农林大学-铃羽世界第一软萌</td><td class="center">4</td><td class="right">350</td><td class="yes">1/32</td><td class="center">0/--</td><td class="yes">3/67</td><td class="center">0/--</td><td class="yes">1/15</td><td class="center">0/--</td><td class="no">3/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/196</td><td>9/4</td>
+</tr>
+<tr class="even">
+<td>99</td><td>C9-黑龙江大学-一起A</td><td class="center">4</td><td class="right">364</td><td class="yes">2/30</td><td class="center">0/--</td><td class="yes">4/71</td><td class="center">0/--</td><td class="yes">1/24</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/159</td><td>8/4</td>
+</tr>
+<tr class="odd">
+<td>100</td><td>J7-河北工业大学-带你去现场偷键盘</td><td class="center">4</td><td class="right">402</td><td class="yes">1/13</td><td class="center">0/--</td><td class="yes">2/70</td><td class="center">0/--</td><td class="yes">1/19</td><td class="center">0/--</td><td class="no">7/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">4/220</td><td>15/4</td>
+</tr>
+<tr class="even">
+<td>101</td><td>C5-浙江中医药大学-那年花开月正圆</td><td class="center">4</td><td class="right">408</td><td class="yes">2/24</td><td class="center">0/--</td><td class="yes">5/135</td><td class="center">0/--</td><td class="yes">1/22</td><td class="center">0/--</td><td class="no">1/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/107</td><td>11/4</td>
+</tr>
+<tr class="odd">
+<td>102</td><td>G6-南阳理工学院-好好学习</td><td class="center">4</td><td class="right">432</td><td class="yes">2/33</td><td class="center">0/--</td><td class="yes">1/65</td><td class="center">0/--</td><td class="yes">1/41</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/253</td><td>6/4</td>
+</tr>
+<tr class="even">
+<td>103</td><td>A9-天津大学仁爱学院-暴鲤龙</td><td class="center">4</td><td class="right">446</td><td class="yes">1/50</td><td class="center">0/--</td><td class="yes">2/112</td><td class="center">0/--</td><td class="yes">3/30</td><td class="center">0/--</td><td class="no">8/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/174</td><td>16/4</td>
+</tr>
+<tr class="odd">
+<td>104</td><td>J10-广东药科大学-小姐姐我们走</td><td class="center">4</td><td class="right">467</td><td class="yes">2/111</td><td class="center">0/--</td><td class="yes">4/79</td><td class="center">0/--</td><td class="yes">1/19</td><td class="center">0/--</td><td class="no">3/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/178</td><td>11/4</td>
+</tr>
+<tr class="even">
+<td>105</td><td>G9-武汉科技大学-黑化肥挥发会发灰</td><td class="center">4</td><td class="right">489</td><td class="yes">3/151</td><td class="center">0/--</td><td class="yes">2/49</td><td class="center">0/--</td><td class="yes">1/4</td><td class="center">0/--</td><td class="no">4/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">2/--</td><td class="yes">2/205</td><td>14/4</td>
+</tr>
+<tr class="odd">
+<td>106</td><td>K1-合肥工业大学-这游戏根本没有SSR</td><td class="center">4</td><td class="right">510</td><td class="yes">1/22</td><td class="center">0/--</td><td class="yes">2/69</td><td class="center">0/--</td><td class="yes">2/29</td><td class="center">0/--</td><td class="no">1/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">6/250</td><td>12/4</td>
+</tr>
+<tr class="even">
+<td>107</td><td>E4-厦门大学-怕怕</td><td class="center">4</td><td class="right">516</td><td class="yes">2/163</td><td class="center">0/--</td><td class="yes">3/104</td><td class="center">0/--</td><td class="yes">2/29</td><td class="center">0/--</td><td class="no">5/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/140</td><td>13/4</td>
+</tr>
+<tr class="odd">
+<td>108</td><td>A1-南阳理工学院-蓝雨</td><td class="center">4</td><td class="right">536</td><td class="yes">1/17</td><td class="center">0/--</td><td class="yes">6/239</td><td class="center">0/--</td><td class="yes">1/25</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/155</td><td>9/4</td>
+</tr>
+<tr class="even">
+<td>109</td><td>G2-西北大学-我不是赞助商派来的</td><td class="center">4</td><td class="right">547</td><td class="yes">1/40</td><td class="center">0/--</td><td class="yes">6/178</td><td class="center">0/--</td><td class="yes">2/28</td><td class="center">0/--</td><td class="no">8/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">3/161</td><td>20/4</td>
+</tr>
+<tr class="odd">
+<td>110</td><td>L3-东华大学-dhu</td><td class="center">4</td><td class="right">580</td><td class="yes">3/195</td><td class="center">0/--</td><td class="yes">1/44</td><td class="center">0/--</td><td class="yes">2/17</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">1/264</td><td>7/4</td>
+</tr>
+<tr class="even">
+<td>111</td><td>B2-浙江理工大学-来包辣条压压惊</td><td class="center">4</td><td class="right">631</td><td class="yes">1/118</td><td class="center">0/--</td><td class="yes">6/168</td><td class="center">0/--</td><td class="yes">1/13</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">4/--</td><td class="yes">2/212</td><td>14/4</td>
+</tr>
+<tr class="odd">
+<td>112</td><td>L6-常州大学-其他喵打铁能报销吗？</td><td class="center">4</td><td class="right">900</td><td class="yes">5/160</td><td class="center">0/--</td><td class="yes">6/201</td><td class="center">0/--</td><td class="yes">2/71</td><td class="center">0/--</td><td class="no">5/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">6/188</td><td>24/4</td>
+</tr>
+<tr class="even">
+<td>113</td><td>I9-西北民族大学-走错门的电子发烧友</td><td class="center">3</td><td class="right">213</td><td class="yes">1/35</td><td class="center">0/--</td><td class="yes">4/77</td><td class="center">0/--</td><td class="yes">1/41</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="no">9/--</td><td>15/3</td>
+</tr>
+<tr class="odd">
+<td>114</td><td>F8-长春工业大学-冲过去就好了</td><td class="center">3</td><td class="right">229</td><td class="yes">1/128</td><td class="center">0/--</td><td class="yes">2/62</td><td class="center">0/--</td><td class="yes">1/19</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td>4/3</td>
+</tr>
+<tr class="even">
+<td>115</td><td>D1-中山大学新华学院-对不起，我爱你</td><td class="center">3</td><td class="right">273</td><td class="yes">1/10</td><td class="center">0/--</td><td class="yes">4/112</td><td class="center">0/--</td><td class="yes">3/51</td><td class="center">0/--</td><td class="no">4/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td>12/3</td>
+</tr>
+<tr class="odd">
+<td>116</td><td>D10-山东科技大学-胜利号</td><td class="center">3</td><td class="right">396</td><td class="yes">3/39</td><td class="center">0/--</td><td class="no">13/--</td><td class="center">0/--</td><td class="yes">1/33</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="yes">2/264</td><td>19/3</td>
+</tr>
+<tr class="even">
+<td>117</td><td>A2-广东工业大学-抓狗大队</td><td class="center">3</td><td class="right">475</td><td class="yes">3/108</td><td class="center">0/--</td><td class="yes">5/209</td><td class="center">0/--</td><td class="yes">1/38</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td class="center">0/--</td><td>9/3</td>
+</tr>
+<tr>
+<td></td><td>Submitted/1st Yes/Total Yes</td><td></td><td></td><td class="center">142/3/117</td><td class="center">10/--/0</td><td class="center">282/13/116</td><td class="center">15/271/2</td><td class="center">148/4/117</td><td class="center">55/67/12</td><td class="center">333/30/77</td><td class="center">48/120/11</td><td class="center">70/133/16</td><td class="center">207/43/53</td><td class="center">203/37/113</td><td>1513/634</td>
+</tr>
+</tbody></table>
+</center>
+<div class="tail">
+<span class="right"><a href="http://pc2.ecs.csus.edu/">PC^2 Homepage</a>
+<br>
+       CSS by Tomas Cerny and Ray Holder
+</span>
+Created by <a href="http://pc2.ecs.csus.edu/">CSUS PC^2</a> version 9.5.2 20170907 build 4651<br>
+Last updated
+Sun Dec 03 14:43:18 CST 2017</div>
+
+
+</body></html>
